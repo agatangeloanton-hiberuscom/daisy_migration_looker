@@ -2,7 +2,7 @@
 # Do not edit by hand; edit the generator or the IR.
 # Governed by migration/RULEBOOK.md — R6 (joins), R8.5 (view labels).
 
-connection: "@{connection_name}"
+connection: "daisy_migration_connection"
 
 include: "/views/*.view.lkml"
 
