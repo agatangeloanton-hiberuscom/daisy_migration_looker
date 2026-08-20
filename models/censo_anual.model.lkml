@@ -6,6 +6,11 @@ connection: "daisy_migration_connection"
 
 include: "/views/*.view.lkml"
 
+include: "/dashboards/poblacion_por_sexo_edad_quinquenal.dashboard.lookml"
+include: "/dashboards/censo_aragon.dashboard.lookml"
+include: "/dashboards/poblacion_por_municipio.dashboard.lookml"
+include: "/dashboards/poblacion_por_sexo.dashboard.lookml"
+
 explore: censo_anual {
   view_name: fct_censo_anual
   label: "Censo Anual"
