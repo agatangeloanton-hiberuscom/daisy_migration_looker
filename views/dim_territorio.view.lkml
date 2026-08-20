@@ -177,7 +177,7 @@ view: dim_territorio {
     description: "Guarded denominator: area sentinels -1 and 0 are removed row-level in mart.dim_territorio — RULEBOOK R4.1, R4.2, R4.3 (null), R4.6"
     type: sum_distinct
     sql_distinct_key: ${TABLE}.municipio_codigo ;;
-    sql: ${TABLE}.municipio_superficie_km2 ;;
+    sql: ${TABLE}.municipio_superficie ;;
     value_format_name: decimal_0
     hidden: yes
   }
