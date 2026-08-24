@@ -2,9 +2,14 @@
 # Do not edit by hand; edit the generator or the IR.
 # Governed by migration/RULEBOOK.md — R6 (joins), R8.5 (view labels).
 
-connection: "@{connection_name}"
+connection: "daisy_migration_connection"
 
 include: "/views/*.view.lkml"
+
+include: "/dashboards/poblacion_por_sexo_edad_quinquenal.dashboard.lookml"
+include: "/dashboards/censo_aragon.dashboard.lookml"
+include: "/dashboards/poblacion_por_municipio.dashboard.lookml"
+include: "/dashboards/poblacion_por_sexo.dashboard.lookml"
 
 explore: censo_anual {
   view_name: fct_censo_anual
